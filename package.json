@@ -43,6 +43,7 @@
         "enzyme-adapter-react-16": "^1.1.1",
         "express": "^4.16.2",
         "extend": "^3.0.1",
+        "face-message": "^0.1.1",
         "file-loader": "^1.1.6",
         "fis-parser-less-2.x": "^0.1.4",
         "fis3-hook-relative": "^2.0.1",
