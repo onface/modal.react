@@ -65,6 +65,12 @@
         color: @face-modal--danger-color;
     }
 }
+.@{face-modal-prefix}--not-header {
+    .@{face-modal-prefix}-body {
+        border-top-left-radius: @face-modal-radius;
+        border-top-right-radius: @face-modal-radius;
+    }
+}
 .@{face-modal-prefix}--not-footer {
     .@{face-modal-prefix}-body {
         border-bottom-left-radius: @face-modal-radius;
@@ -78,4 +84,60 @@
     border-bottom-left-radius: @face-modal-radius;
     border-bottom-right-radius: @face-modal-radius;
     border-top: 1px solid @face-modal-line-color;
+}
+.@{face-modal-prefix}-tip--success {
+    .@{face-modal-prefix}-tip-title-icon{
+        color:@face-modal--success-color;
+    }
+}
+.@{face-modal-prefix}-tip--info {
+    .@{face-modal-prefix}-tip-title-icon{
+        color:@face-modal--info-color;
+    }
+}
+.@{face-modal-prefix}-tip--warning {
+    .@{face-modal-prefix}-tip-title-icon{
+        color:@face-modal--warning-color;
+    }
+}
+.@{face-modal-prefix}-tip--confirm {
+    .@{face-modal-prefix}-tip-title-icon{
+        color:@face-modal--warning-color;
+    }
+}
+.@{face-modal-prefix}-tip--danger {
+    .@{face-modal-prefix}-tip-title-icon{
+        color:@face-modal--danger-color;
+    }
+}
+.@{face-modal-prefix}-tip {
+    padding-left: 4em;
+}
+.@{face-modal-prefix}-tip-title {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-weight: bold;
+}
+.@{face-modal-prefix}-tip-title-icon {
+    float: left;
+    margin-left: -1.5em;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-top: -.17em;
+}
+.@{face-modal-prefix}-tip-content {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    color: #666;
+}
+.@{face-modal-prefix}--themes-tip {
+    .@{face-modal-prefix}-body {
+        padding-top: 1.5em;
+    }
+    .@{face-modal-prefix}-footer {
+        border-top: none;
+        padding-top: 0;
+        padding-bottom: 1.5em;
+        padding-right: 1.5em;
+    }
 }

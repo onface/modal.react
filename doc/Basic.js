@@ -100,6 +100,50 @@ class Basic extends React.Component {
                      action
                     </p>
                 </Modal>
+                <hr />
+                <Button onClick={() => {
+                    Modal.success('成功删除用户数据')
+                }} >success</Button>
+                <Button onClick={() => {
+                    Modal.success({
+                        title: '删除成功',
+                        content: '成功删除用户数据'
+                    })
+                }} >succes 2</Button>
+                <Button onClick={() => {
+                    Modal.error('你没有权限')
+                }} >error</Button>
+                <Button onClick={() => {
+                    Modal.warn('必须先付款')
+                }} >warn</Button>
+                <Button onClick={() => {
+                    Modal.info('余额：1万三千八百五十六')
+                }} >info</Button>
+                <hr/>
+                <Button onClick={() => {
+                    Modal.confirm('删除该用户？', () => {
+                        console.log('确认')
+                    })
+                }} >confirm</Button>
+                <Button onClick={() => {
+                    Modal.confirm('删除该用户？', () => {
+                        return new Promise(function(resolve, reject) {
+                            setTimeout(function () {
+                                resolve()
+                            }, 2000)
+                        });
+                    })
+                }} >confirm async success</Button>
+                <Button onClick={() => {
+                    Modal.confirm('删除该用户？', () => {
+                        return new Promise(function(resolve, reject) {
+                            setTimeout(function () {
+                                reject()
+                                message.error('删除失败')
+                            }, 2000)
+                        });
+                    })
+                }} >confirm async error</Button>
             </div>
         )
     }

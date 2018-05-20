@@ -18,7 +18,9 @@
     "$username": "onface",
     "$repository": "modal.react",
     "dependencies": {
+        "icon.react": "^0.2.2",
         "prop-types": "^15.6.0",
+        "safe-extend": "^3.0.5",
         "util.react": "^1.6.0"
     },
     "devDependencies": {
