@@ -1,0 +1,143 @@
+@import "./settings";
+.@{face-modal-prefix}-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #373737;
+    background-color: rgba(0,0,0,.65);
+    height: 100%;
+    z-index: 1051;
+}
+.@{face-modal-prefix}-wrap {
+    z-index: 1151;
+    text-align: center;
+    position: fixed;
+    left:0;top:0;
+    width: 100%;
+    height: 100%;
+    white-space:nowrap;
+    &::after {
+        content: ' ';
+        display: inline-block;
+        height: 100%;
+        width: 0px;
+        background-color: transparent;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+}
+.@{face-modal-prefix} {
+    box-shadow:@face-modal-shadow;
+    display: inline-block;
+    width: 35em;
+    text-align: left;
+    vertical-align: middle;
+    white-space:normal;
+}
+.@{face-modal-prefix}-body {
+    background-color: @face-modal-background;
+    padding:@face-modal-padding;
+}
+.@{face-modal-prefix}-header {
+    position: relative;
+    padding:@face-modal-header-padding;
+    background-color: @face-modal-background;
+    border-top-left-radius: @face-modal-radius;
+    border-top-right-radius: @face-modal-radius;
+    border-bottom: 1px solid @face-modal-line-color;
+}
+.@{face-modal-prefix}-header-title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.@{face-modal-prefix}-header-close {
+    position: absolute;
+    right:0;
+    top:0;
+    font-size:2em;
+    color:#999;
+    padding:.35em;
+    line-height: 1;
+    cursor: pointer;
+    &:hover {
+        color: @face-modal--danger-color;
+    }
+}
+.@{face-modal-prefix}--not-header {
+    .@{face-modal-prefix}-body {
+        border-top-left-radius: @face-modal-radius;
+        border-top-right-radius: @face-modal-radius;
+    }
+}
+.@{face-modal-prefix}--not-footer {
+    .@{face-modal-prefix}-body {
+        border-bottom-left-radius: @face-modal-radius;
+        border-bottom-right-radius: @face-modal-radius;
+    }
+}
+.@{face-modal-prefix}-footer {
+    padding:@face-modal-padding;
+    text-align: right;
+    background-color: @face-modal-background;
+    border-bottom-left-radius: @face-modal-radius;
+    border-bottom-right-radius: @face-modal-radius;
+    border-top: 1px solid @face-modal-line-color;
+}
+.@{face-modal-prefix}-tip--success {
+    .@{face-modal-prefix}-tip-title-icon{
+        color:@face-modal--success-color;
+    }
+}
+.@{face-modal-prefix}-tip--info {
+    .@{face-modal-prefix}-tip-title-icon{
+        color:@face-modal--info-color;
+    }
+}
+.@{face-modal-prefix}-tip--warning {
+    .@{face-modal-prefix}-tip-title-icon{
+        color:@face-modal--warning-color;
+    }
+}
+.@{face-modal-prefix}-tip--confirm {
+    .@{face-modal-prefix}-tip-title-icon{
+        color:@face-modal--warning-color;
+    }
+}
+.@{face-modal-prefix}-tip--danger {
+    .@{face-modal-prefix}-tip-title-icon{
+        color:@face-modal--danger-color;
+    }
+}
+.@{face-modal-prefix}-tip {
+    padding-left: 4em;
+}
+.@{face-modal-prefix}-tip-title {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-weight: bold;
+}
+.@{face-modal-prefix}-tip-title-icon {
+    float: left;
+    margin-left: -1.5em;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-top: -.17em;
+}
+.@{face-modal-prefix}-tip-content {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    color: #666;
+}
+.@{face-modal-prefix}--themes-tip {
+    .@{face-modal-prefix}-body {
+        padding-top: 1.5em;
+    }
+    .@{face-modal-prefix}-footer {
+        border-top: none;
+        padding-top: 0;
+        padding-bottom: 1.5em;
+        padding-right: 1.5em;
+    }
+}
