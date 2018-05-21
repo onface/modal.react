@@ -1,7 +1,7 @@
 {
     "name": "modal.react",
     "main": "lib/index.js",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Modal",
     "keywords": "",
     "scripts": {
@@ -21,7 +21,8 @@
         "icon.react": "^0.2.2",
         "prop-types": "^15.6.0",
         "safe-extend": "^3.0.5",
-        "util.react": "^1.6.0"
+        "util.react": "^1.6.0",
+        "button.react": "^0.4.0"
     },
     "devDependencies": {
         "babel": "^6.23.0",
@@ -37,7 +38,6 @@
         "babel-plugin-transform-react-jsx-source": "^6.22.0",
         "babel-polyfill": "^6.26.0",
         "babel-preset-es2015": "^6.24.1",
-        "button.react": "^0.3.6",
         "chai": "^4.1.2",
         "css-loader": "^0.26.1",
         "ejs": "^2.5.7",
